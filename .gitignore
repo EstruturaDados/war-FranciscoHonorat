@@ -1,0 +1,9 @@
+@"
+*.exe
+*.o
+*.obj
+*.out
+.vscode/
+!.vscode/tasks.json
+*.log
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
