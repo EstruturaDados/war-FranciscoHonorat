@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar WAR",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "territorio.c",
+                "ataque.c",
+                "missao.c",
+                "utilidades.c",
+                "-o",
+                "war.exe",
+                "-Wall",
+                "-Wextra",
+                "-std=c11"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Compilar e Executar WAR",
+            "type": "shell",
+            "command": "gcc main.c territorio.c ataque.c missao.c utilidades.c -o war.exe && .\\war.exe",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}

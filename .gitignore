@@ -1,9 +1,27 @@
-@"
+# Executáveis
 *.exe
+*.out
+*.app
+
+# Arquivos objeto
 *.o
 *.obj
-*.out
-.vscode/
+*.a
+*.lib
+
+# VS Code (exceto tasks.json)
+.vscode/*
 !.vscode/tasks.json
+
+# Logs
 *.log
-"@ | Out-File -FilePath .gitignore -Encoding UTF8
+
+# Temporários
+*.tmp
+*.bak
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
